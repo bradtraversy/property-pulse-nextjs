@@ -4,7 +4,7 @@ import connectDB from '@/config/database';
 
 const PropertiesPage = async () => {
   await connectDB();
-  const properties = await Property.find({});
+  const properties = await Property.find({}).lean();
 
   return (
     <section className='px-4 py-6'>
