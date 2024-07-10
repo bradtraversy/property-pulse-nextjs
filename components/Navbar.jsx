@@ -93,14 +93,16 @@ const Navbar = () => {
                 >
                   Properties
                 </Link>
-                <Link
-                  href='/properties/add'
-                  className={`${
-                    pathname === '/properties/add' ? 'bg-black' : ''
-                  } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
-                >
-                  Add Property
-                </Link>
+                {session && (
+                  <Link
+                    href='/properties/add'
+                    className={`${
+                      pathname === '/properties/add' ? 'bg-black' : ''
+                    } text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
+                  >
+                    Add Property
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -250,14 +252,16 @@ const Navbar = () => {
             >
               Properties
             </Link>
-            <Link
-              href='/properties/add'
-              className={`${
-                pathname === '/properties/add' ? 'bg-black' : ''
-              } text-white block rounded-md px-3 py-2 text-base font-medium`}
-            >
-              Add Property
-            </Link>
+            {session && (
+              <Link
+                href='/properties/add'
+                className={`${
+                  pathname === '/properties/add' ? 'bg-black' : ''
+                } text-white block rounded-md px-3 py-2 text-base font-medium`}
+              >
+                Add Property
+              </Link>
+            )}
             {!session && (
               <div className='block md:ml-6'>
                 <div className='flex items-center'>
