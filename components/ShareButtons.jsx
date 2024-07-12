@@ -10,8 +10,8 @@ import {
   EmailIcon,
 } from 'react-share';
 
-const ShareButton = ({ property }) => {
-  const shareUrl = `http://${process.env.NEXT_PUBLIC_DOMAIN}/properties/${property._id}`;
+const ShareButtons = ({ property }) => {
+  const shareUrl = `${process.env.NEXT_PUBLIC_DOMAIN}/properties/${property._id}`;
 
   return (
     <>
@@ -22,17 +22,19 @@ const ShareButton = ({ property }) => {
         <FacebookShareButton
           url={shareUrl}
           quote={property.name}
-          hashtag={`#${property.type}ForRent`}
+          hashtag={`#${property.type.replace(/\s/g, '')}ForRent`}
         >
           <FacebookIcon size={40} round={true} />
         </FacebookShareButton>
+
         <TwitterShareButton
           url={shareUrl}
           title={property.name}
-          hashtags={[`${property.type}ForRent`]}
+          hashtags={[`${property.type.replace(/\s/g, '')}ForRent`]}
         >
           <TwitterIcon size={40} round={true} />
         </TwitterShareButton>
+
         <WhatsappShareButton
           url={shareUrl}
           title={property.name}
@@ -40,10 +42,11 @@ const ShareButton = ({ property }) => {
         >
           <WhatsappIcon size={40} round={true} />
         </WhatsappShareButton>
+
         <EmailShareButton
           url={shareUrl}
           subject={property.name}
-          body={`Check out this property: ${shareUrl}`}
+          body={`Check out this property listing: ${shareUrl}`}
         >
           <EmailIcon size={40} round={true} />
         </EmailShareButton>
@@ -51,4 +54,4 @@ const ShareButton = ({ property }) => {
     </>
   );
 };
-export default ShareButton;
+export default ShareButtons;
