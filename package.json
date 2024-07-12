@@ -17,7 +17,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
-    "react-spinners": "^0.14.1"
+    "react-spinners": "^0.14.1",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@types/node": "20.14.10",
