@@ -4,12 +4,15 @@ import Pagination from '@/components/Pagination';
 import Property from '@/models/Property';
 import connectDB from '@/config/database';
 
-const PropertiesPage = async ({ searchParams: { pageSize = 3, page = 1 } }) => {
+const PropertiesPage = async ({ searchParams: { pageSize = 9, page = 1 } }) => {
   await connectDB();
   const skip = (page - 1) * pageSize;
 
   const total = await Property.countDocuments({});
   const properties = await Property.find({}).skip(skip).limit(pageSize);
+
+  // Calculate if pagination is needed
+  const showPagination = total > pageSize;
 
   return (
     <>
@@ -30,11 +33,13 @@ const PropertiesPage = async ({ searchParams: { pageSize = 3, page = 1 } }) => {
               ))}
             </div>
           )}
-          <Pagination
-            page={parseInt(page)}
-            pageSize={parseInt(pageSize)}
-            totalItems={total}
-          />
+          {showPagination && (
+            <Pagination
+              page={parseInt(page)}
+              pageSize={parseInt(pageSize)}
+              totalItems={total}
+            />
+          )}
         </div>
       </section>
     </>
