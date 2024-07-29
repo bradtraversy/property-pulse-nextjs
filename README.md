@@ -4,6 +4,8 @@
 
 This is the main project from my [Next 14 From Scratch Course](https://www.traversymedia.com/nextjs-from-scratch)
 
+This is the second iteration of the app/course that uses server actions instead of API routes.
+
 The `_theme_files` folder contains the pure HTML files with Tailwind classes.
 
 <img src="/public/images/screen.jpg" />
