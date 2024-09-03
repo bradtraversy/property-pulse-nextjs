@@ -27,10 +27,18 @@ const Navbar = () => {
 
     setAuthProviders();
 
-    // NOTE: close mobile menu if the viewport size is changed
-    window.addEventListener('resize', () => {
+    // Function to handle resize
+    const handleResize = () => {
       setIsMobileMenuOpen(false);
-    });
+    };
+
+    // NOTE: close mobile menu if the viewport size is changed
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (
