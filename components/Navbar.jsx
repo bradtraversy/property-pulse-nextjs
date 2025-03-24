@@ -42,7 +42,7 @@ const Navbar = () => {
             <button
               type='button'
               id='mobile-dropdown-button'
-              className='relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
+              className='relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-white'
               aria-controls='mobile-menu'
               aria-expanded='false'
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -68,7 +68,7 @@ const Navbar = () => {
 
           <div className='flex flex-1 items-center justify-center md:items-stretch md:justify-start'>
             {/* <!-- Logo --> */}
-            <Link className='flex flex-shrink-0 items-center' href='/'>
+            <Link className='flex shrink-0 items-center' href='/'>
               <Image className='h-10 w-auto' src={logo} alt='PropertyPulse' />
 
               <span className='hidden md:block text-white text-2xl font-bold ml-2'>
@@ -133,7 +133,7 @@ const Navbar = () => {
               <Link href='/messages' className='relative group'>
                 <button
                   type='button'
-                  className='relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'
+                  className='relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-hidden focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'
                 >
                   <span className='absolute -inset-1.5'></span>
                   <span className='sr-only'>View notifications</span>
@@ -159,7 +159,7 @@ const Navbar = () => {
                 <div>
                   <button
                     type='button'
-                    className='relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'
+                    className='relative flex rounded-full bg-gray-800 text-sm focus:outline-hidden focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'
                     id='user-menu-button'
                     aria-expanded='false'
                     aria-haspopup='true'
@@ -181,7 +181,7 @@ const Navbar = () => {
                 {isProfileMenuOpen && (
                   <div
                     id='user-menu'
-                    className='absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
+                    className='absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden'
                     role='menu'
                     aria-orientation='vertical'
                     aria-labelledby='user-menu-button'

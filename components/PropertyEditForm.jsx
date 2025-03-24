@@ -14,7 +14,7 @@ const PropertyEditForm = ({ property }) => {
         <select
           id='type'
           name='type'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           required
           defaultValue={property.type}
         >
@@ -35,7 +35,7 @@ const PropertyEditForm = ({ property }) => {
           type='text'
           id='name'
           name='name'
-          className='border rounded w-full py-2 px-3 mb-2'
+          className='border rounded-sm w-full py-2 px-3 mb-2'
           placeholder='eg. Beautiful Apartment In Miami'
           required
           defaultValue={property.name}
@@ -51,7 +51,7 @@ const PropertyEditForm = ({ property }) => {
         <textarea
           id='description'
           name='description'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           rows='4'
           placeholder='Add an optional description of your property'
           defaultValue={property.description}
@@ -64,7 +64,7 @@ const PropertyEditForm = ({ property }) => {
           type='text'
           id='street'
           name='location.street'
-          className='border rounded w-full py-2 px-3 mb-2'
+          className='border rounded-sm w-full py-2 px-3 mb-2'
           placeholder='Street'
           defaultValue={property.location.street}
         />
@@ -72,7 +72,7 @@ const PropertyEditForm = ({ property }) => {
           type='text'
           id='city'
           name='location.city'
-          className='border rounded w-full py-2 px-3 mb-2'
+          className='border rounded-sm w-full py-2 px-3 mb-2'
           placeholder='City'
           required
           defaultValue={property.location.city}
@@ -81,7 +81,7 @@ const PropertyEditForm = ({ property }) => {
           type='text'
           id='state'
           name='location.state'
-          className='border rounded w-full py-2 px-3 mb-2'
+          className='border rounded-sm w-full py-2 px-3 mb-2'
           placeholder='State'
           required
           defaultValue={property.location.state}
@@ -90,7 +90,7 @@ const PropertyEditForm = ({ property }) => {
           type='text'
           id='zipcode'
           name='location.zipcode'
-          className='border rounded w-full py-2 px-3 mb-2'
+          className='border rounded-sm w-full py-2 px-3 mb-2'
           placeholder='Zipcode'
           defaultValue={property.location.zipcode}
         />
@@ -105,7 +105,7 @@ const PropertyEditForm = ({ property }) => {
             type='number'
             id='beds'
             name='beds'
-            className='border rounded w-full py-2 px-3'
+            className='border rounded-sm w-full py-2 px-3'
             required
             defaultValue={property.beds}
           />
@@ -118,7 +118,7 @@ const PropertyEditForm = ({ property }) => {
             type='number'
             id='baths'
             name='baths'
-            className='border rounded w-full py-2 px-3'
+            className='border rounded-sm w-full py-2 px-3'
             required
             defaultValue={property.baths}
           />
@@ -134,7 +134,7 @@ const PropertyEditForm = ({ property }) => {
             type='number'
             id='square_feet'
             name='square_feet'
-            className='border rounded w-full py-2 px-3'
+            className='border rounded-sm w-full py-2 px-3'
             required
             defaultValue={property.square_feet}
           />
@@ -331,7 +331,7 @@ const PropertyEditForm = ({ property }) => {
               type='number'
               id='weekly_rate'
               name='rates.weekly'
-              className='border rounded w-full py-2 px-3'
+              className='border rounded-sm w-full py-2 px-3'
               defaultValue={property.rates.weekly}
             />
           </div>
@@ -343,7 +343,7 @@ const PropertyEditForm = ({ property }) => {
               type='number'
               id='monthly_rate'
               name='rates.monthly'
-              className='border rounded w-full py-2 px-3'
+              className='border rounded-sm w-full py-2 px-3'
               defaultValue={property.rates.monthly}
             />
           </div>
@@ -355,7 +355,7 @@ const PropertyEditForm = ({ property }) => {
               type='number'
               id='nightly_rate'
               name='rates.nightly'
-              className='border rounded w-full py-2 px-3'
+              className='border rounded-sm w-full py-2 px-3'
               defaultValue={property.rates.nightly}
             />
           </div>
@@ -373,7 +373,7 @@ const PropertyEditForm = ({ property }) => {
           type='text'
           id='seller_name'
           name='seller_info.name.'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           placeholder='Name'
           defaultValue={property.seller_info.name}
         />
@@ -389,7 +389,7 @@ const PropertyEditForm = ({ property }) => {
           type='email'
           id='seller_email'
           name='seller_info.email'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           placeholder='Email address'
           required
           defaultValue={property.seller_info.email}
@@ -406,14 +406,14 @@ const PropertyEditForm = ({ property }) => {
           type='tel'
           id='seller_phone'
           name='seller_info.phone'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           placeholder='Phone'
           defaultValue={property.seller_info.phone}
         />
       </div>
       <div>
         <button
-          className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline'
+          className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-hidden focus:shadow-outline'
           type='submit'
         >
           Update Property

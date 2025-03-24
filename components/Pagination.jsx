@@ -6,7 +6,7 @@ const Pagination = ({ page, pageSize, totalItems }) => {
     <section className='container mx-auto flex justify-center items-center my-8'>
       {page > 1 ? (
         <Link
-          className='mr-2 px-2 py-1 border border-gray-300 rounded'
+          className='mr-2 px-2 py-1 border border-gray-300 rounded-sm'
           href={`/properties?page=${page - 1}`}
         >
           Previous
@@ -20,7 +20,7 @@ const Pagination = ({ page, pageSize, totalItems }) => {
 
       {page < totalPages ? (
         <Link
-          className='ml-2 px-2 py-1 border border-gray-300 rounded'
+          className='ml-2 px-2 py-1 border border-gray-300 rounded-sm'
           href={`/properties?page=${page + 1}`}
         >
           Next

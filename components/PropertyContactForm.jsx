@@ -49,7 +49,7 @@ const PropertyContactForm = ({ property }) => {
               Name:
             </label>
             <input
-              className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+              className='shadow-sm appearance-none border rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-hidden focus:shadow-outline'
               id='name'
               name='name'
               type='text'
@@ -65,7 +65,7 @@ const PropertyContactForm = ({ property }) => {
               Email:
             </label>
             <input
-              className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+              className='shadow-sm appearance-none border rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-hidden focus:shadow-outline'
               id='email'
               name='email'
               type='email'
@@ -81,7 +81,7 @@ const PropertyContactForm = ({ property }) => {
               Phone:
             </label>
             <input
-              className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+              className='shadow-sm appearance-none border rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-hidden focus:shadow-outline'
               id='phone'
               name='phone'
               type='text'
@@ -96,7 +96,7 @@ const PropertyContactForm = ({ property }) => {
               Message:
             </label>
             <textarea
-              className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 h-44 focus:outline-none focus:shadow-outline'
+              className='shadow-sm appearance-none border rounded-sm w-full py-2 px-3 text-gray-700 h-44 focus:outline-hidden focus:shadow-outline'
               id='message'
               name='message'
               placeholder='Enter your message'

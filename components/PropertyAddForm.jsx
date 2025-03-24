@@ -13,7 +13,7 @@ const PropertyAddForm = () => {
         <select
           id='type'
           name='type'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           required
         >
           <option value='Apartment'>Apartment</option>
@@ -33,7 +33,7 @@ const PropertyAddForm = () => {
           type='text'
           id='name'
           name='name'
-          className='border rounded w-full py-2 px-3 mb-2'
+          className='border rounded-sm w-full py-2 px-3 mb-2'
           placeholder='eg. Beautiful Apartment In Miami'
           required
         />
@@ -48,7 +48,7 @@ const PropertyAddForm = () => {
         <textarea
           id='description'
           name='description'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           rows='4'
           placeholder='Add an optional description of your property'
         ></textarea>
@@ -60,14 +60,14 @@ const PropertyAddForm = () => {
           type='text'
           id='street'
           name='location.street'
-          className='border rounded w-full py-2 px-3 mb-2'
+          className='border rounded-sm w-full py-2 px-3 mb-2'
           placeholder='Street'
         />
         <input
           type='text'
           id='city'
           name='location.city'
-          className='border rounded w-full py-2 px-3 mb-2'
+          className='border rounded-sm w-full py-2 px-3 mb-2'
           placeholder='City'
           required
         />
@@ -75,7 +75,7 @@ const PropertyAddForm = () => {
           type='text'
           id='state'
           name='location.state'
-          className='border rounded w-full py-2 px-3 mb-2'
+          className='border rounded-sm w-full py-2 px-3 mb-2'
           placeholder='State'
           required
         />
@@ -83,7 +83,7 @@ const PropertyAddForm = () => {
           type='text'
           id='zipcode'
           name='location.zipcode'
-          className='border rounded w-full py-2 px-3 mb-2'
+          className='border rounded-sm w-full py-2 px-3 mb-2'
           placeholder='Zipcode'
         />
       </div>
@@ -97,7 +97,7 @@ const PropertyAddForm = () => {
             type='number'
             id='beds'
             name='beds'
-            className='border rounded w-full py-2 px-3'
+            className='border rounded-sm w-full py-2 px-3'
             required
           />
         </div>
@@ -109,7 +109,7 @@ const PropertyAddForm = () => {
             type='number'
             id='baths'
             name='baths'
-            className='border rounded w-full py-2 px-3'
+            className='border rounded-sm w-full py-2 px-3'
             required
           />
         </div>
@@ -124,7 +124,7 @@ const PropertyAddForm = () => {
             type='number'
             id='square_feet'
             name='square_feet'
-            className='border rounded w-full py-2 px-3'
+            className='border rounded-sm w-full py-2 px-3'
             required
           />
         </div>
@@ -303,7 +303,7 @@ const PropertyAddForm = () => {
               type='number'
               id='weekly_rate'
               name='rates.weekly'
-              className='border rounded w-full py-2 px-3'
+              className='border rounded-sm w-full py-2 px-3'
             />
           </div>
           <div className='flex items-center'>
@@ -314,7 +314,7 @@ const PropertyAddForm = () => {
               type='number'
               id='monthly_rate'
               name='rates.monthly'
-              className='border rounded w-full py-2 px-3'
+              className='border rounded-sm w-full py-2 px-3'
             />
           </div>
           <div className='flex items-center'>
@@ -325,7 +325,7 @@ const PropertyAddForm = () => {
               type='number'
               id='nightly_rate'
               name='rates.nightly'
-              className='border rounded w-full py-2 px-3'
+              className='border rounded-sm w-full py-2 px-3'
             />
           </div>
         </div>
@@ -342,7 +342,7 @@ const PropertyAddForm = () => {
           type='text'
           id='seller_name'
           name='seller_info.name.'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           placeholder='Name'
         />
       </div>
@@ -357,7 +357,7 @@ const PropertyAddForm = () => {
           type='email'
           id='seller_email'
           name='seller_info.email'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           placeholder='Email address'
           required
         />
@@ -373,7 +373,7 @@ const PropertyAddForm = () => {
           type='tel'
           id='seller_phone'
           name='seller_info.phone'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           placeholder='Phone'
         />
       </div>
@@ -386,7 +386,7 @@ const PropertyAddForm = () => {
           type='file'
           id='images'
           name='images'
-          className='border rounded w-full py-2 px-3'
+          className='border rounded-sm w-full py-2 px-3'
           accept='image/*'
           multiple
           required
@@ -395,7 +395,7 @@ const PropertyAddForm = () => {
 
       <div>
         <button
-          className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline'
+          className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-hidden focus:shadow-outline'
           type='submit'
         >
           Add Property
